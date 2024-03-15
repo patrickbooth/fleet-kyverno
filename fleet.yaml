@@ -29,3 +29,11 @@ helm:
   # Path to any values files that need to be passed to helm during install
   valuesFiles:
   - values.yaml
+
+  valuesFrom:
+  - configMapKeyRef:
+      name: cluster-info
+      # default to namespace of bundle
+      namespace: default
+      key: labels
+
