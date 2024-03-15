@@ -6,7 +6,7 @@ admissionController:
     create: true
   podAnnotations:
     prometheus.io/path: "/metrics" # Added for otel discover/scraping
-    prometheus.io/port: "8000:"
+    prometheus.io/port: "8000"
     prometheus.io/scheme: "http" # Added for otel discover/scraping
     prometheus.io/scrape: "true"
 
@@ -15,7 +15,7 @@ backgroundController:
     create: true
   podAnnotations:
     prometheus.io/path: "/metrics" # Added for otel discover/scraping
-    prometheus.io/port: "8000:"
+    prometheus.io/port: "8000"
     prometheus.io/scheme: "http" # Added for otel discover/scraping
     prometheus.io/scrape: "true"
 
@@ -24,7 +24,7 @@ cleanupController:
     create: true
   podAnnotations:
     prometheus.io/path: "/metrics" # Added for otel discover/scraping
-    prometheus.io/port: "8000:"
+    prometheus.io/port: "8000"
     prometheus.io/scheme: "http" # Added for otel discover/scraping
     prometheus.io/scrape: "true"
 
@@ -33,6 +33,6 @@ reportsController:
     create: true
   podAnnotations:
     prometheus.io/path: "/metrics" # Added for otel discover/scraping
-    prometheus.io/port: "8000:"
+    prometheus.io/port: "8000"
     prometheus.io/scheme: "http" # Added for otel discover/scraping
     prometheus.io/scrape: "true"
