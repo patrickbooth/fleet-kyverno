@@ -30,10 +30,3 @@ helm:
   valuesFiles:
   - values.yaml
 
-  valuesFrom:
-  - configMapKeyRef:
-      name: cluster-info
-      # default to namespace of bundle
-      namespace: default
-      key: labels
-
