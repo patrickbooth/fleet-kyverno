@@ -1,24 +1,38 @@
 ## Enable metrics
 ## https://kyverno.io/docs/monitoring/
 
-podAnnotations:
-  prometheus.io/path: "/metrics" # Added for otel discover/scraping
-  prometheus.io/port: "8000:"
-  prometheus.io/scheme: "http" # Added for otel discover/scraping
-  prometheus.io/scrape: "true"
-
 admissionController:
   metricsService:
     create: true
+  podAnnotations:
+    prometheus.io/path: "/metrics" # Added for otel discover/scraping
+    prometheus.io/port: "8000:"
+    prometheus.io/scheme: "http" # Added for otel discover/scraping
+    prometheus.io/scrape: "true"
 
 backgroundController:
   metricsService:
     create: true
+  podAnnotations:
+    prometheus.io/path: "/metrics" # Added for otel discover/scraping
+    prometheus.io/port: "8000:"
+    prometheus.io/scheme: "http" # Added for otel discover/scraping
+    prometheus.io/scrape: "true"
 
 cleanupController:
   metricsService:
     create: true
+  podAnnotations:
+    prometheus.io/path: "/metrics" # Added for otel discover/scraping
+    prometheus.io/port: "8000:"
+    prometheus.io/scheme: "http" # Added for otel discover/scraping
+    prometheus.io/scrape: "true"
 
 reportsController:
   metricsService:
     create: true
+  podAnnotations:
+    prometheus.io/path: "/metrics" # Added for otel discover/scraping
+    prometheus.io/port: "8000:"
+    prometheus.io/scheme: "http" # Added for otel discover/scraping
+    prometheus.io/scrape: "true"
